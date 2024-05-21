@@ -68,7 +68,35 @@
           <button data-modal-open type="button" class="button">Замовити послугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <!-- <p>teeeext</p> -->
+              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+              <form name="modal_form" autocomplete="on" class="modal-form" novalidate>
+                <label class="modal-label">
+                  Ім'я
+                  <input type="text" name="firstName" class="modal-form-input" autofocus placeholder="E-mail" />
+                
+                </label>
+                <label class="modal-label">
+                  Телефон
+                  <input type="tel" name="phone" class="modal-form-input"  autofocus placeholder="E-mail" />
+                </label>
+                <label class="modal-label">
+                  Пошта
+                  <input type="email" name="email" class="modal-form-input" autofocus placeholder="E-mail" />
+                </label>
+                <label class="modal-label">
+                Коментар
+                  <textarea name="feedback" rows="5" class="modal-form-textarea" placeholder="Введіть текст"></textarea>
+                </label>
+                <label>
+                  <input type="checkbox" name="agree" class="checkbox" value="Погоджуюся з розсилкою та приймаю Умови договору" checked />
+               Погоджуюся з розсилкою та приймаю <span><a href="" class="conditions" >Умови договору</a></span>
+                </label>
+                <button type="submit" class="submit-btn">
+                 Відправити
+                
+                </button>
+              </form>
+
               <button type="button" class="modal-button" data-modal-close>
                 <svg class="icon-modal" width="11" height="11">
                   <use href="./images/icons.svg#Vector" />
@@ -468,9 +496,9 @@
 
         <div class="footer-form">
           <p class="form-subtitle">Підпишіться на розсилку</p>
-          <form name="signup_form" autocomplete="on" novalidate>
-            <label>
-            <input type="email" name="email" autofocus placeholder="E-mail"/>
+          <form name="signup_form" class="form-subscribe" autocomplete="on" novalidate>
+            <label class="label-subscribe">
+              <input type="email" name="email" class="input-subscribe" placeholder="E-mail" />
             </label>
 
             <button type="submit" class="footer-form-btn">
@@ -486,5 +514,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-

@@ -344,9 +344,7 @@ button:focus {
   transform: translate(-50%, -50%) scale(1); /*властивість була перебита тому через пробіл записуємо */
   min-width: 528px;
   min-height: 581px;
-  /* padding-top: 8px;
-   padding-right: 8px;
-  padding-left: 490px; */
+  padding: 40px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -376,6 +374,90 @@ button:focus {
 
 .icon-modal {
   fill: rgba(0, 0, 0, 1);
+}
+
+/*MODAL FORM*/
+
+.modal-title {
+
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  color: rgba(33, 33, 33, 1);
+}
+
+.modal-form {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+ gap: 4px;
+color: rgba(117, 117, 117, 1);
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 0.01em;
+text-align: left;
+
+  }
+
+.modal-form-input {
+
+ padding-left: 42px;
+height: 40px;
+border-radius: 4px;
+border: 1px solid rgba(33, 33, 33, 0.2)
+}
+
+.modal-form-textarea{
+padding-left: 42px;
+margin-bottom: 10px;
+height: 120px;
+border-radius: 4px;
+border: 1px solid rgba(33, 33, 33, 0.2)
+}
+
+.checkbox{
+
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71;
+text-align: left;
+color: rgba(117, 117, 117, 1);
+}
+
+.conditions{
+text-decoration: underline;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71;
+color: var(--accent-color);
+}
+.submit-btn {
+  display: inline-block;
+  padding: 0;
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  border-width: o;
+  border-color: var(--accent-color);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  /* margin-right: 10px; */
 }
 
 /* ----------------------Features----------------------------*/
@@ -426,56 +508,7 @@ button:focus {
   justify-content: center;
 }
 
-/* .image{
-  display: block;
-  width: 270px;
-  height: 120px;
-} */
-/* 
-
-/* .features-item::before {
-  display: block;
-  height: 120px;
-  content: '';
-  background-image: url(../images/antenna.png); */
-/* background-size: contain; */
-/* background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(245, 244, 250, 1);
-  border-radius: 4px;
-}
-
-.features-item:nth-child(2):before {
-  /* можна через доп класс задавать свойства */
-/* background-image: url(../images/clock.png);
-}
-
-.features-item:nth-child(3):before {
-  background-image: url(../images/diagram.png);
-}
-
-.features-item:nth-child(4):before {
-  background-image: url(../images/astronaut.png);
-} */
-
-.features-text {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(117, 117, 117, 1);
-}
-
-.features-subtitle {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-/*About*/
+/*---------------About-------------------------*/
 
 .about-title,
 .team-title,
@@ -800,41 +833,44 @@ button:focus {
 /*________________FORM_________________*/
 
 .footer-form {
-
   margin-left: 93px;
-  
 }
 
-form{
+.form-subscribe {
   width: 570px;
   display: flex;
   flex-direction: row;
   gap: 12px;
- 
 }
 
-label{
+.label-subscribe {
   display: flex;
   color: #757575;
-    height: 50px;
+  height: 50px;
+  padding: 0;
 }
 
-input{
+.input-subscibe {
   display: flex;
-width: 358px;
- background-color: rgba(47, 48, 58, 1);
-font-size: 16px;
-font-weight: 400;
-line-height: 1.25;
-text-align: left;
-padding-left: 15px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+  background-color: rgba(47, 48, 58, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+  padding: 0;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .footer-form-btn {
   display: inline-block;
+  padding: 0;
   background-color: var(--accent-color);
+  border-width: o;
+  border-color: var(--accent-color);
   border-radius: 4px;
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
@@ -845,10 +881,10 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 200px;
   height: 50px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
-.form-icon{
+.form-icon {
   fill: currentColor;
 }
 /*------------------------------------------------------------ Portfolio -------------------------------*/
